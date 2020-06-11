@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="All around exterior cleaning company for ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!--to insure proper mobile interaction and scaliong-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .descriptionDiv {
+        background-color: rgba(211,211,211,0.6);
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        background-position: center;
+        margin: 100px 60% 100px 10%;
+    }
+
+    .whyDiv {
+        background-color: lightgrey;
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        width: 100%;
+        padding: 100px 100px;
+        margin-right: 0%;
+    }
+
+    /* Set height of body and the document to 100% to enable "full page tabs" */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+
+    /* Style tab links */
+    .tablink {
+      background-color: #555;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 33.333333%;
+    }
+
+    .tablink:hover {
+      background-color: #777;
+    }
+
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+      color: white;
+      display: none;
+
+      height: cover;
+      width: 100%;
+      background:  url(https://www.reflectionsjax.com/wp-content/uploads/2019/02/pressure-washing-jacksonville-fl.jpg) no-repeat fixed center ;
+    }
+
+    ul {
+        display: inline-block;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    body {
+
+    }
+
+    li {
+        text-align: left;
+        float: center;
+
+    }
+
+    #Home {background-color: white;}
+    #Contact {background-color: white;}
+    #About {background-color: white;}
+</style>
+
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <div>
+            {% load static%}
+            <img src="{% static 'practice/test.jpg' %}" alt="My image">
+
+        </div>
+
+        <!--Upper tab links that allows transfer among this single page website's other facets -->
+        <button class="tablink" onclick="openPage('Home', this, '#ccf03e')" id="defaultOpen">Home</button>
+        <button class="tablink" onclick="openPage('Contact', this, '#89e0fa')">Contact</button>
+        <button class="tablink" onclick="openPage('About', this, '#e63c3c')">About</button>
+
+
+        <!-- Home tab content -->
+        <div id="Home" class="tabcontent">
+                <!--Description of company and its purpose -->
+                <div class="row">
+                    <img src="https://cdn.vox-cdn.com/thumbor/XUdUk_rKJ8WDTd0zksnnicYDwbY=/0x0:3760x2500/1200x800/filters:focal(1580x950:2180x1550)/cdn.vox-cdn.com/uploads/chorus_image/image/65135516/shutterstock_349464740.0.jpg"
+                         class="img-responsive w-100" alt="House" >
+                </div>
+                <div class=".container-fluid bg-white text-dark p-5">
+                    <div class=".container-bordered m-5">
+                        <h1 class="text-center">EXTERIOR PROPERTY CLEANING</h1>
+
+                        <h2 class="text-center">Cleaning Windows, Pressure Washing, Gutter Cleaning, and More</h2>
+                        <p class="text-center">
+        Ensure clear windows, clean roofs, functional gutters, and more! Book the cleaning services of All Around Window Cleaning LLC in Woodstock, GA to guarantee a neat and spotless property exterior. Specializing in interior and exterior window cleaning, our cleaning company services homes and businesses across Metro Atlanta.
+                        </p>
+                    </div>
+                </div>
+            <div class="descriptionDiv">
+                <h1>What You Get</h1>
+                <ul>
+                    <li>Attention to Details</li>
+                    <li>Commitment to Customer Satisfaction</li>
+                    <li>Excellent Customer Service</li>
+                    <li>Focus on Quality Work</li>
+                    <li>Integrity</li>
+                    <li>Professionalism</li>
+                </ul>
+            </div>
+                    <div class="row bg-secondary" >
+                                    <img src="https://d1hz0qcu1muexe.cloudfront.net/uploads/5d9207a86764e468c0db2160/ba2ed40f59c734c9e80238cd30660b72a94d18392e809bb4cabe83a091e1ccfdIMG_3666.jpeg"
+                                    class="col-sm-4 p-5" alt="Exterior cleaning team working">
+
+
+                                    <ul class="float-center pt-5"><h1>Why should you partner with us?</h1>
+                                        <li >Competitive Rates</li>
+                                        <li>Comprehensive Cleaning Services</li>
+                                        <li>Dynamic Team of Professional Cleaners</li>
+                                        <li>Free Service Estimates</li>
+                                        <li>Locally Owned Cleaning Company</li>
+                                        <li>Over 4 Years of Industry Experience</li>
+                                    </ul>
+                    </div>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+          <h3>Contact</h3>
+          <p>Get in touch, or swing by for a cup of coffee.</p>
+        </div>
+
+        <div id="About" class="tabcontent">
+          <h3>About</h3>
+          <p>Who we are and what we do.</p>
+        </div>
+
+
+
+    <script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>
